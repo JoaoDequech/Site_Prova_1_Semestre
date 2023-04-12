@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance_João_Dequech</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+        </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        .Logo {
+            padding-left: 30px;
+            padding-top: 15px;
+        }
+
+        .GetStarted {
+            display: inline-block;
+            color: white;
+            background-color: #836FFF;
+            padding: 10px 30px;
+            border-radius: 9px;
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 40px;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .PrimeiraTela {
+            background-color: #f4f5f5;
+        }
+
+        .limitador {
+            max-width: 1300px;
+            margin: 0px auto;
+        }
+
+        .Improve {
+            font-family: 'Kanit', sans-serif;
+            padding-left: 40px;
+            padding-top: 55px;
+        }
+
+        .Buy {
+            font-family: 'Kanit', sans-serif;
+            padding-left: 40px;
+            padding-top: 20px;
+            padding-right: 400px;
+        }
+
+        .Trade {
+            font-family: 'Kanit', sans-serif;
+            padding-left: 40px;
+            padding-top: 20px;
+            padding-right: 400px;
+        }
+
+        .SegundaTela {
+            background-color: white;
+        }
+
+        .Trusted {
+            font-family: 'Kanit', sans-serif;
+            padding-left: 40px;
+            padding-top: 65px;
+            color: black;
+        }
+
+        .Here {
+            font-family: 'Kanit', sans-serif;
+            color: black;
+            padding-top: 80px;
+            padding-left: 120px;
+            padding-right: 30px;
+        }
+
+        .Icone1 {
+            padding-top: 80px;
+            padding-left: 60px;
+        }
+
+        .Advanced {
+            padding-left: 60px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Descricao1 {
+            padding-left: 60px;
+            padding-top: 5px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .View {
+            padding-left: 60px;
+            padding-top: 5px;
+            color: #f7d777;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Markets {
+            padding-left: 60px;
+            padding-top: 5px;
+            color: #f7d777;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Descricao2 {
+            padding-left: 60px;
+            padding-top: 5px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Plentiful {
+            padding-left: 60px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Icone2 {
+            padding-top: 80px;
+            padding-left: 60px;
+        }
+
+        .Icone3 {
+            padding-top: 80px;
+            padding-left: 60px;
+        }
+
+        .Low {
+            padding-left: 60px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Descricao3 {
+            padding-left: 60px;
+            padding-top: 5px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Fee {
+            padding-left: 60px;
+            padding-top: 5px;
+            color: #f7d777;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Cry {
+            font-family: 'Kanit', sans-serif;
+            padding-left: 40px;
+            padding-top: 200px;
+            color: black;
+        }
+
+        .Imgtela2 {
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .QuartaTela {
+            background-color: #f4f5f5;
+        }
+
+        .Create {
+            padding-top: 80px;
+            text-align: center;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Send {
+            color: black;
+            font-family: 'Kanit', sans-serif;
+            padding-top: 40px;
+        }
+
+        .Add {
+            font-family: 'Kanit', sans-serif;
+            padding-top: 20px;
+            padding-right: 100px;
+        }
+
+        .Check {
+            color: black;
+            font-family: 'Kanit', sans-serif;
+            padding-top: 30px;
+        }
+
+        .Complete {
+            font-family: 'Kanit', sans-serif;
+            padding-top: 20px;
+            padding-right: 100px;
+        }
+
+        .Start {
+            color: black;
+            font-family: 'Kanit', sans-serif;
+            padding-top: 30px;
+        }
+
+        .Ready {
+            font-family: 'Kanit', sans-serif;
+            padding-top: 20px;
+            padding-right: 100px;
+        }
+
+        .Imagemtela3{
+            padding-left: 90px;
+            padding-top: 40px;
+        }
+
+        .Endless{
+            padding-top: 70px;
+            padding-left: 40px;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Oportunities{
+            padding-top: 20px;
+            padding-left: 40px;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .NFT {
+            padding-left: 40px;
+            padding-top: 20px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+        .Open{
+            padding-left: 40px;
+            padding-top: 10px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .Earn {
+            padding-left: 40px;
+            padding-top: 20px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+        .Hold{
+            padding-left: 40px;
+            padding-top: 10px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+
+        .Grow {
+            padding-left: 40px;
+            padding-top: 20px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+        .Pay{
+            padding-left: 40px;
+            padding-top: 10px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="limitador">
+
+        <div class="container-fluid PrimeiraTela">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <p class="Logo">
+
+                        <img src="Binance_Logo.png" alt="Logo Binance" width="200" />
+
+                    </p>
+                    <p class="Improve">
+                        Improve your investment
+                    </p>
+
+                    <h1 class="Buy">
+                        Buy, Sell, and Trade Cryptocurrencies
+                    </h1>
+
+                    <p class="Trade">
+                        Trade over 100 cryptocurrencies with low trading fees
+                    </p>
+
+
+                    <div>
+                        <a class="GetStarted" href="https://www.binance.com/pt-BR" target="_blank">
+
+                            Get Started
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+
+                    <p class="Imagem2">
+                        <img src="photo2.png" alt="Imagem2" width="600">
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid SegundaTela">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h1 class="Trusted">
+                        Your trusted crypto exchange
+                    </h1>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <p class="Here">
+                        Here at Binance, user safety is our priority. We rely on reliable protocols and the best
+                        technical security measures in the industry.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <p class="Icone1">
+
+                        <img src="tab1.svg">
+
+                    </p>
+
+                    <h3 class="Advanced">
+
+                        Advanced Security
+
+                    </h3>
+
+                    <p class="Descricao1">
+
+                        We use state-of-the-art storage technology to protect your cryptocurrency and USD assets
+
+                    </p>
+
+                    <a class="View" href="https://cer.live/" target="_blank">
+
+                        View More
+
+                    </a>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <p class="Icone2">
+
+                        <img src="tab2.svg">
+
+                    </p>
+
+                    <h3 class="Plentiful">
+
+                        Plentiful Pairs
+
+                    </h3>
+
+                    <p class="Descricao2">
+
+                        Access a variety of cryptocurrencies and trading pairs
+
+                    </p>
+
+                    <a class="Markets" href="https://www.binance.us/en/markets" target="_blank">
+
+                        View Markets
+
+                    </a>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <p class="Icone3">
+
+                        <img src="tab3.svg">
+
+                    </p>
+
+                    <h3 class="Low">
+
+                        Low Fees
+
+                    </h3>
+
+                    <p class="Descricao3">
+
+                        Low fees empower you to buy, sell, and trade cryptocurrencies
+
+                    </p>
+
+                    <a class="Fee" href="https://www.binance.us/en/markets" target="_blank">
+
+                        Fee Structure
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid TerceiraTela">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1 class="Cry">
+
+                        Cryptocurrencies
+
+                    </h1>
+
+                    <p class="Imgtela2">
+
+                        <img src="Captura de tela 2022-09-23 231640.png">
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid QuartaTela">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1 class="Create">
+
+                        Build your cryptocurrency portfolio
+
+                    </h1>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="Send">
+
+                        Send funds to your account
+
+                    </h3>
+
+                    <p class="Add">
+
+                        Add funds to your account and start trading cryptocurrencies. You can add funds using a variety
+                        of payment methods
+
+                    </p>
+
+                    <h3 class="Check">
+
+                        Check your identity
+
+                    </h3>
+
+                    <p class="Complete">
+
+                        Complete the identity verification process to secure your account and transactions
+
+                    </p>
+
+                    <h3 class="Start">
+
+                        Start trading
+
+                    </h3>
+
+                    <p class="Ready">
+
+                        All ready! Buy/sell cryptocurrencies, set up recurring purchases for your investments and
+                        discover what Binance has to offer
+
+                    </p>
+
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="Imagemtela3">
+
+                        <img src="portfolio-section.png" width="200">
+
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid QuintaTela">
+
+            <h1 class="Endless">
+
+                <b>Endless possibilities with Binance</b>
+
+            </h1>
+
+            <p class="Oportunities">
+
+                Your money growth opportunities are here
+
+            </p>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    
+                    <h4 class="NFT">
+
+                        Dive into the world of NFTs
+
+                    </h4>
+
+                    <p class="Open">
+
+                        Open Rare Mystery Boxes, Explore IGOs, Fan Tokens and More with Binance NFT
+
+                    </p>
+                    
+                    
+
+                </div>
+
+                <div class="col-sm-4">
+                    
+                    <h4 class="Grow">
+
+                        Grow your business with Binance Pay
+
+                    </h4>
+
+                    <p class="Pay">
+
+                        Pay and receive in cryptocurrencies and grow your user base with our borderless payment technologies, Binance Pay and Binance Marketplace
+
+                    </p>
+                    
+                    
+
+                </div>
+
+                <div class="col-sm-4">
+                    
+                    <h4 class="Earn">
+
+                        Binance Earn
+
+                    </h4>
+
+                    <p class="Hold">
+
+                        Hold your crypto funds and earn from the proceeds.
+
+                    </p>
+                    
+                    
+
+                </div>
+
+            </div>
+        </div>
+
+    
+
+
+
+
+
+    </div>
+</body>
+
+</html>
